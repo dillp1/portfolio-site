@@ -20,6 +20,13 @@ const config = {
   },
 
   url: 'https://dillonmichlena.com',
+
+  customFields: {
+    // Apps Script web app URL for the live RAIL panel (see scripts/rail-public-stats.gs).
+    // Leave empty to hide the panel.
+    railStatsUrl:
+      'https://script.google.com/macros/s/AKfycbzLqg-r6xKwszOK58xF0K9nikVo76M3evpBI1nYOX8tIE5Z0DFjcgGHz1TqJ-34HY4e/exec',
+  },
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',

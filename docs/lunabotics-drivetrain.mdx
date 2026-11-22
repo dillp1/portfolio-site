@@ -8,6 +8,7 @@ sidebar_custom_props:
 
 import cadVideo from './assets/lunabotics-drivetrain/demo.mp4';
 import cadPoster from './assets/lunabotics-drivetrain/demo-poster.jpg';
+import assembly from './assets/lunabotics-drivetrain/assembly.jpeg';
 
 ![Purdue Lunabotics' competition robot, a tracked rover with an aluminum chassis, LED strips and googly eyes on the front panel](./assets/lunabotics-drivetrain/photo.jpeg)
 
@@ -28,10 +29,16 @@ from design through to assembly on the competition robot.
 - Manufactured the remaining drivetrain components
 - Assembled the complete drivetrain on the competition robot
 
-<figure className="video-figure">
-  <video className="video" src={cadVideo} poster={cadPoster} autoPlay loop muted playsInline controls />
-  <figcaption>The tread assembly in SolidWorks.</figcaption>
-</figure>
+<div className="photo-row">
+  <figure>
+    <video className="video" src={cadVideo} poster={cadPoster} autoPlay loop muted playsInline controls />
+    <figcaption>Design: the tread assembly in SolidWorks.</figcaption>
+  </figure>
+  <figure>
+    <img src={assembly} alt="The tread drivetrain partway through assembly on a workbench: aluminum side plates, two motor housings and a tread module" loading="lazy" />
+    <figcaption>Build: the drivetrain partway through assembly.</figcaption>
+  </figure>
+</div>
 
 ## Challenges
 

@@ -82,3 +82,38 @@
   font-size: 0.875rem;
   color: var(--ifm-color-emphasis-700);
 }
+
+/* Two photos or videos side by side on project pages; stacks on phones */
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.photo-row figure {
+  margin: 0;
+}
+
+.photo-row img,
+.photo-row .video {
+  display: block;
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.photo-row figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (max-width: 600px) {
+  .photo-row {
+    grid-template-columns: 1fr;
+  }
+}
