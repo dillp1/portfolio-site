@@ -2,7 +2,12 @@
 title: Lunabotics Drivetrain
 description: "The tread drivetrain I designed, manufactured and assembled for Purdue Lunabotics' robot at the 2026 NASA Lunabotics Challenge."
 sidebar_position: 2
+sidebar_custom_props:
+  image: /img/projects/lunabotics-drivetrain.jpg
 ---
+
+import cadVideo from './assets/lunabotics-drivetrain/demo.mp4';
+import cadPoster from './assets/lunabotics-drivetrain/demo-poster.jpg';
 
 ![Purdue Lunabotics' competition robot, a tracked rover with an aluminum chassis, LED strips and googly eyes on the front panel](./assets/lunabotics-drivetrain/photo.jpeg)
 
@@ -22,6 +27,11 @@ from design through to assembly on the competition robot.
 - 3D printed all 52 tread pieces in PAHT-CF, a carbon-fiber-filled nylon
 - Manufactured the remaining drivetrain components
 - Assembled the complete drivetrain on the competition robot
+
+<figure className="video-figure">
+  <video className="video" src={cadVideo} poster={cadPoster} autoPlay loop muted playsInline controls />
+  <figcaption>The tread assembly in SolidWorks.</figcaption>
+</figure>
 
 ## Challenges
 

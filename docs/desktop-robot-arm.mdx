@@ -2,7 +2,12 @@
 title: Desktop Robot Arm
 description: "A three-servo desktop robot arm with teach-and-repeat control, written in bare-metal C for the ATmega2560 (Arduino Mega)."
 sidebar_position: 5
+sidebar_custom_props:
+  image: /img/projects/desktop-robot-arm.jpg
 ---
+
+import demoVideo from './assets/desktop-robot-arm/demo.mp4';
+import demoPoster from './assets/desktop-robot-arm/demo-poster.jpg';
 
 ![The 3D-printed robot arm with its gripper raised, wired to an Arduino on a breadboard with three potentiometer knobs, status LEDs and a blue character LCD](./assets/desktop-robot-arm/photo.jpg)
 
@@ -41,6 +46,11 @@ approach used to program robots in manufacturing.
 
 A working arm that can be posed by hand, taught a sequence of up to 10 points and play it back on
 repeat, with all of the control code running as bare-metal C on the microcontroller.
+
+<figure className="video-figure">
+  <video className="video" src={demoVideo} poster={demoPoster} autoPlay loop muted playsInline controls />
+  <figcaption>Recording points in record mode, with the LCD confirming each one.</figcaption>
+</figure>
 
 ## Links
 
