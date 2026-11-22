@@ -4,10 +4,21 @@
  */
 
 .heroBanner {
+  --ifm-hero-background-color: var(--palette-deep-purple);
+  --ifm-hero-text-color: #ffffff;
   padding: 4rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+}
+
+/* Second line of the hero title ("Robotics Engineer.") in pink. */
+.heroAccent {
+  color: var(--palette-pink);
+}
+
+.heroBanner :global(.hero__subtitle) {
+  color: var(--palette-blush);
 }
 
 @media screen and (max-width: 996px) {
