@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
@@ -15,6 +16,11 @@ function HomepageHeader() {
           <span className={styles.heroAccent}>Robotics Engineer.</span>
         </Heading>
         <p className="hero__subtitle">Hardware and software engineer interested in all things robotics and engineering.</p>
+        <div className={styles.buttons}>
+          <Link className={clsx('button button--lg', styles.heroButton)} to="/projects">
+            View Projects →
+          </Link>
+        </div>
       </div>
     </header>
   );

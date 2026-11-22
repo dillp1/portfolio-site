@@ -30,5 +30,22 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Pink button on the deep-purple hero */
+.heroButton {
+  background-color: var(--palette-pink);
+  border-color: var(--palette-pink);
+  color: var(--palette-ink);
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.heroButton:hover {
+  background-color: var(--palette-blush);
+  border-color: var(--palette-blush);
+  color: var(--palette-ink);
+  text-decoration: none;
+  transform: translateY(-2px);
 }
