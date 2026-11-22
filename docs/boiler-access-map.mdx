@@ -6,7 +6,16 @@ sidebar_custom_props:
   image: /img/projects/boiler-access-map.jpg
 ---
 
-![The Boiler Access Map homepage: the headline "Know campus navigation before you arrive" next to a gold map icon](./assets/boiler-access-map/hero.png)
+<figure className="video-figure">
+  <img
+    src={require('./assets/boiler-access-map/harrison-map.png').default}
+    alt="Boiler Access Map's view of Harrison Residence Hall: one blue arrow marker at a back entrance and three red warning markers at the other entrances"
+  />
+  <figcaption>
+    Harrison Hall on the map. The only accessible entrance (blue) is a ramp at the back; the main
+    entrance and two others (red) have stairs.
+  </figcaption>
+</figure>
 
 **Role:** Designer and developer · **Team:** Solo · **Timeline:** Mar – Apr 2026
 
@@ -41,7 +50,9 @@ The core question was what "accessible" should actually mean. A building can hav
 back and still technically comply, but that isn't the same experience as walking in the front door.
 So instead of a yes/no checkmark, the scoring looks at whether the accessible entrance is the main
 entrance, how visible it is, and whether it requires a detour. A building only earns **Equal access**
-when the accessible way in is also the main, visible one. Each building also prompts readers to think
+when the accessible way in is also the main, visible one. Harrison Hall, shown above, is the kind of
+case this catches: it can be entered step-free, but only through a ramp at the back while the main
+entrance has stairs. Each building also prompts readers to think
 about it themselves, with questions like *"If the accessible entrance is not the main entrance, is
 this equal access?"*
 
