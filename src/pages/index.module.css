@@ -23,12 +23,14 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    /* the container already adds side gutters */
+    padding: 3rem 0;
   }
 }
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
