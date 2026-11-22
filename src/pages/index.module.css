@@ -49,3 +49,19 @@
   text-decoration: none;
   transform: translateY(-2px);
 }
+
+/* Secondary hero button: pink outline */
+.heroButtonOutline {
+  --ifm-button-border-color: var(--palette-pink);
+  background-color: transparent;
+  border: 2px solid var(--palette-pink);
+  color: var(--palette-pink);
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.heroButtonOutline:hover {
+  background-color: var(--palette-pink);
+  color: var(--palette-ink);
+  text-decoration: none;
+  transform: translateY(-2px);
+}

@@ -78,6 +78,11 @@ const config = {
             position: 'left',
             label: 'Projects',
           },
+          {
+            href: 'pathname:///Dillon-Michlena-Resume.pdf',
+            label: 'Resume',
+            position: 'right',
+          },
         ],
       },
       footer: {

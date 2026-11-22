@@ -20,6 +20,12 @@ function HomepageHeader() {
           <Link className={clsx('button button--lg', styles.heroButton)} to="/projects">
             View Projects →
           </Link>
+          <Link
+            className={clsx('button button--lg', styles.heroButtonOutline)}
+            to="pathname:///Dillon-Michlena-Resume.pdf"
+            target="_blank">
+            Resume
+          </Link>
         </div>
       </div>
     </header>
