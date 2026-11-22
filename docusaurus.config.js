@@ -19,16 +19,15 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://dillonmichlena.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // GitHub Pages deployment
+  organizationName: 'dillp1',
+  projectName: 'portfolio-site',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
@@ -49,17 +48,9 @@ const config = {
           routeBasePath: 'projects',
           sidebarPath: './sidebars.js',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // Blog is off until there are real posts. To turn it on, replace `false` with
+        // {showReadingTime: true} and put posts in blog/.
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
